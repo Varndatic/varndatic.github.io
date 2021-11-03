@@ -1,5 +1,6 @@
 #Body {
-
+    padding-left: 0%;
+    padding-right: 0%;
 }
 
 #HeaderBorder{
@@ -9,41 +10,45 @@
     top: 20%;
     align-content: center;
     height: 200px;
+
 }
 
 #InnerHeaderBorder{
     position: relative;
     height: 200px;
+    /* padding-left: 12.5%;
+    padding-right: 12.5%; */
 }
 
 #HeaderText{
     margin-top: 75px;
-    text-align: center;
+    text-align: right;
+    padding-right: 5%;
+    color: white;
 }
 
 #ContextMenu{
     position: relative;
     border-color: gray;
     border-style: solid;
-    border-radius: 1%;
-    top: 17%;
     background-color: lightgray;
-    align-content: center;
-    padding-left: 35%;
-    padding-right: 35%;
+    width: 35%;
+    top: -66%;
+    /* align-content: center; */
+    /* padding-left: 15%;
+    padding-right: 15%; */
 }
 
 #MenuButton{
     border-color: gray;
     border-style: solid;
-    border-top-style:none;
-    border-bottom-style:none;
     background-color: lightgray;
     position: relative;
-    width: 32% ;
+    width: 100% ;
     align-content: center;
     height: 30px;
-    display: inline-block;
+    display: table;
+    /* display: inline-block; */
 }
 
 #HeaderBackdrop{
@@ -63,32 +68,14 @@
     height: 200px;
 }
 
-@media screen and (max-width: 546px) {
-    #Body {
-        padding-left: 10%;
-        padding-right: 10%;
-        background-color: blue;
-    }
-
-    #HeaderBorder{
-        
-    }
-    #InnerHeaderBorder{
-        padding-left: 10%;
-        padding-right: 10%;
-    }
-
-    #ContextMenu{
-        padding-left: 15%;
-        padding-right: 15%;
-    }
+@media screen and (max-width: 640px) {
 
 }
 
-@media screen and (min-width: 546px) and ( max-width: 1000px) {
+@media screen and (min-width: 640px) {
     #Body {
-        padding-left: 12.5%;
-        padding-right: 12.5%;
+        padding-left: 15%;
+        padding-right: 15%;
         background-color: yellow;
     }
 
@@ -114,8 +101,8 @@
         background-color: red;
     }
     #InnerHeaderBorder{
-        padding-left: 15%;
-        padding-right: 15%;
+        padding-left: 14.75%;
+        padding-right: 14%.75;
     }
 
     #HeaderBorder{
@@ -123,7 +110,30 @@
     }
 
     #ContextMenu{
-        padding-left: 12.5%;
-        padding-right: 12.5%;
+        border-radius: 1%;
+        top: 17%;
+        align-content: center;
+        width: 60%;
+        padding-left: 18.125%;
+        padding-right: 18.125%;
+    }
+
+    #MenuButton{
+        border-color: gray;
+        border-style: solid;
+        border-top-style:none;
+        border-bottom-style:none;
+        background-color: lightgray;
+        position: relative;
+        width: 32% ;
+        align-content: center;
+        height: 30px;
+        display: inline-block;
+    }
+
+    #HeaderText{
+        margin-top: 75px;
+        text-align: center;
+        color: white;
     }
 }
