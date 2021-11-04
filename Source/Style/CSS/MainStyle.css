@@ -68,11 +68,11 @@
     height: 200px;
 }
 
-@media screen and (max-device-aspect-ratio: 920px) {
+@media screen and (max-width: 480px) and (orientation: Portrait ) {
 
 }
 
-@media screen and (min-width: 920px) {
+@media screen and (min-width: 481px) and (orientation: Landscape) {
     #Body {
         padding-left: 15%;
         padding-right: 15%;
@@ -94,7 +94,7 @@
 
 }
 
-@media screen and (min-width: 1000px){
+@media screen and (min-width: 1025px) and (orientation: Landscape){
     #Body {
         padding-left: 15%;
         padding-right: 15%;
