@@ -13,7 +13,6 @@
     top: 20%;
     align-content: center;
     height: 200px;
-
 }
 
 #InnerHeaderBorder{
@@ -46,7 +45,7 @@
     padding-right: 15%; */
 }
 
-#MenuButton{
+#SocialMediaButton{
     border-color: gray;
     border-style: solid;
     border-radius: 30px;
@@ -161,7 +160,14 @@
     }
 
     #HeaderBorder{
-       
+        border-color: red;
+        border-style: solid;
+        background-color: black;
+        position: relative; 
+        top: 20%;
+        align-content: center;
+        height: 275px;
+
     }
 
     #ContextMenu{
@@ -171,20 +177,21 @@
         width: 60%;
         padding-left: 18.125%;
         padding-right: 18.125%; 
+        height: auto;
     }
 
-    #MenuButton{
+    #SocialMediaButton{
+        position: relative;
         border-color: gray;
         border-style: solid;
         border-top-style:none;
         border-bottom-style:none;
         background-color: lightgray;
-        position: relative;
-        width: 32.5% ;
         left: 0.25%;
         align-content: center;
         text-align: center;
-        height: 30px;
+        width: 50px ;
+        height: 50px;
         display: inline-block;
     }
 
