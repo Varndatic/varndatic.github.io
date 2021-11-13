@@ -1,61 +1,97 @@
-#Body {
-    top: 2px;
+#Body{
+    background: black;
+    padding-left: 0%;
+    padding-right: 0%;
+    margin-left: -0.1%;
+    margin-right: 0%;
+    overflow-x:hidden;
+}
+
+#ContentBody {
     position: relative;
     padding-left: 0%;
     padding-right: 0%;
+    padding-top: 0.001%;
     align-content: center;
+    background: black;
 }
 
 #HeaderBorder{
-    border-color: lightblue;
-    border-style: solid;
+    border-color: black;
+    background-color: #262626;
+    border-style: solid; 
     position: relative; 
-    top: 20%;
     align-content: center;
-    height: 200px;
+    margin-top: -0.51%;
+    width: 100%;
+    height: auto;
+    padding-bottom: 10%;
+}
+
+#ProfilePicture{
+    position: relative;
+    width: 25%;
+    margin-left: 37.5%;
+    margin-top: 2.75%;
+    align-content: center;
+    height: auto;
+    border-radius: 100px;
 }
 
 #InnerHeaderBorder{
     position: relative;
-    height: 200px;
+    height: auto;
     align-content: center;
     /* padding-left: 12.5%;
     padding-right: 12.5%; */
 }
 
 #HeaderText{
-    margin-top: 75px;
+    margin-top: 5px;
     font-size: 330%;
     text-align: right;
-    padding-right: 5%;
+   
     color: white;
     align-content: center;
+    text-align: center;
 }
 
 #ContextMenu{
     position: relative;
     border-color: gray;
     border-style: solid;
+    align-content: center;
+    text-align: center;
+    width: 40%;
+    padding-right: 0%;
+    margin-left: 30%;
     border-radius: 30px;
     background-color: lightgray;
-    width: 35%;
-    top: -66%;
-    /* align-content: center; */
-    /* padding-left: 15%;
-    padding-right: 15%; */
+ 
 }
 
 #SocialMediaButton{
+    position: relative;
+    align-content: center;
+    text-align: center;
+    border-top-style:none;
+    border-bottom-style:none;
     border-color: gray;
+    background-color: lightgray;
     border-style: solid;
     border-radius: 30px;
-    background-color: lightgray;
-    position: relative;
-    width: 100% ;
-    align-content: center;
-    height: 30px;
-    display: table;
-    /* display: inline-block; */
+    margin-top: 2%;
+    margin-bottom: 1%;
+    margin-right: 8%;
+    margin-left: 8%;
+    width: 20px ;
+    height: 20px;
+    display:inline-block;
+}
+
+#SocialMediaButton:hover{
+    opacity: 50%;
+    cursor:pointer;
 }
 
 #HeaderBackdrop {
@@ -63,23 +99,31 @@
     align-content: center;
     /* //left: -0.02%; */
     width: 100%;
-    height: 200px;
-    object-fit: cover;
-    object-position: 0% 25%;
+    height: auto;
+    object-fit:cover;
+    /* object-position: 0% 25%; */
 }
 
 #ContentField {
     position: relative;
-    border-color: grey;
-    border-style: solid;
-    background-color: grey;
+    /* border-color: grey; */
+    background-color: #262626;
+    margin-top: 5%;
+    /* border-style: solid;
+    background-color: grey; */
+    width: 100%;
     height: auto;
+    object-fit:cover;
 }
 
 #ContentFieldHeaderText{
     position: relative;
     text-align:center;
     font-size: 240%;
+    margin-top: 0%;
+    padding-top: 5%;
+    margin-bottom: 5%;
+    color: white;
 }
 
 #ContentFieldRightColumn {
@@ -90,13 +134,13 @@
 
 #ContentBox {
     position: relative;
-    border-block: white;
+    background-color:  #333333;
     border-style: solid;
     width: 100%;
 
     align-content: center;
     display: inline-block;
-    margin-top: 5%;
+    margin-top: 2%;
 }
 
 #ContentText{
@@ -109,6 +153,8 @@
     align-content:center;
     text-align:left;
     height:fit-content;
+    color:white;
+    font-size: 105%;
 }
 
 #ContentSprite{
@@ -127,10 +173,10 @@
 }
 
 @media screen and (min-width: 481px) and (orientation: Landscape) {
-    #Body {
+    #ContentBody {
         padding-left: 15%;
         padding-right: 15%;
-        background-color: yellow;
+        /* background-color: yellow; */
     }
 
     #HeaderBorder{
@@ -149,88 +195,122 @@
 }
 
 @media screen and (min-width: 1025px) and (orientation: Landscape){
-    #Body {
+    #ContentBody {
+        position: relative;
+        padding-top: 0.001%;
+        align-content: center;
+        background: black;
         padding-left: 15%;
         padding-right: 15%;
-        background-color: red;
-    }
-    #InnerHeaderBorder{
-        padding-left: 14.75%;
-        padding-right: 14%.75;
     }
 
     #HeaderBorder{
-        border-color: red;
-        border-style: solid;
-        background-color: black;
         position: relative; 
-        top: 20%;
+        border-color: none;
+        background-color: #262626;
+        border-style: solid; 
+        position: relative; 
         align-content: center;
-        height: 275px;
+        margin-top: -0.51%;
+        width: 100%;
+        height: auto;
+        padding-bottom: 10%;
+    }
 
+    #InnerHeaderBorder{
+        /* padding-left: 14.75%;
+        padding-right: 14%.75; */
+        padding-top: 5%;
+        height: auto;
+        display: inline-block;
+        width: 1150px;
     }
 
     #ContextMenu{
-        top: 2%;
+        position: relative;
+        border-color: gray;
+        border-style: solid;
+        border-radius: 30px;
+        background-color: lightgray;
+        padding-left: 0%;
+        padding-right: 0%;
+        margin-top: -2%;
+        margin-left: 15%;
         align-content: center;
         text-align: center;
-        width: 60%;
-        padding-left: 18.125%;
-        padding-right: 18.125%; 
+        width: 35%;
         height: auto;
     }
 
     #SocialMediaButton{
         position: relative;
-        border-color: gray;
-        border-style: solid;
         border-top-style:none;
         border-bottom-style:none;
         background-color: lightgray;
-        left: 0.25%;
+        margin-top: 1%;
+        margin-right: 2%;
+        margin-left: 2%;
+        margin-bottom: 0%;
         align-content: center;
         text-align: center;
-        width: 50px ;
-        height: 50px;
-        display: inline-block;
+        width: 20px ;
+        height: 20px;
+        display:inline-block;
     }
 
     #HeaderText{
-        margin-top: 50px;
-        text-align: center;
-        font-size: 60px;
+        position: relative;
+        margin-top: -12%;
+        text-align: left;
+        font-size: 350%;
         color: white;
-        padding-right: 5%;
-        /* margin-top: 75px;
-        text-align: center;
-        
-        color: white;
-        align-content: center; */
+        padding-left: 16%;
+      
     }
 
     #ContentFieldHeaderText{
         position: relative;
         text-align:center;
+        padding-top: 5%;
+        color: white;
     }
 
     #ContentFieldRightColumn {
         position: relative;
         width: 40%;
         left: 10.25%;
-        padding-top: 23%;
+        margin-top: 2%;
+        margin-bottom: 7%;
         align-content: center;
         vertical-align: top;
         height: auto;
         display: inline-block;
-        /* border-color: greenyellow;
-        border-style: solid; */
+         /* border-color: greenyellow;
+        border-style: solid;  */
+    }
+
+    #ContentField {
+        position: relative;
+        align-content: center;
+        /* border-color: grey; */
+        background-color: #262626;
+        margin-top: 2%;
+        margin-bottom: 0%;
+        margin-left: 0%;
+        margin-right: 0%;
+        /* border-style: solid;
+        background-color: grey; */
+        width: 100%;
+        height: auto;
+        /* object-fit:cover; */
     }
     
     #ContentFieldLeftColumn {
         position: relative;
         width: 40%;
         left: 8.25%;
-        padding-top: 23%;
+        margin-top: 2%;
+        margin-bottom: 7%;
         align-content: center;
         vertical-align: top;
         height: auto;
@@ -242,9 +322,10 @@
     #ContentBox {
         position: relative;
         border-block: white;
+        border-radius: 30px;
         border-style: solid;
         width: 100%;
-        top: -162px;
+        /* top: -162px; */
         align-content: center;
         display: inline-block;
         margin-top: 5%;
@@ -254,8 +335,10 @@
         position:relative;
         top:5%;
         bottom: 5%;
-        right: 5%;
-        left: 5%;
+        margin-right: 5%;
+        margin-left: 5%;
+        right: 0%;
+        left: 0%;
         width: 90%;
         align-content:center;
         text-align:left;
@@ -266,10 +349,22 @@
         position:relative;
         border-bottom: black;
         border-bottom-style:solid;
+        border-radius: 30px;
         margin-top: 5%;
         margin-bottom: 0%;
         margin-right: 5%;
         margin-left: 5%;
         width: 90%;
+    }
+    
+    #ProfilePicture{
+        position: relative;
+        width: 12%;
+        /* margin-top: 2.75%;
+        margin-bottom: 2.75%; */
+        margin-left: 0%;
+        align-content: center;
+        height: auto;
+        border-radius: 100px;
     }
 }
