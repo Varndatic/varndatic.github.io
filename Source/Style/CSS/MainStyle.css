@@ -166,6 +166,9 @@
     margin-right: 5%;
     margin-left: 5%;
     width: 90%;
+    height: 300px;
+    object-fit: none;
+    object-position: top;
 }
 
 @media screen and (max-width: 480px) and (orientation: Portrait ) {
@@ -330,6 +333,7 @@
         align-content: center;
         display: inline-block;
         margin-top: 5%;
+        transition: transform 250ms linear, opacity 250ms linear;
     }
     
     #ContentText{
@@ -356,8 +360,17 @@
         margin-right: 5%;
         margin-left: 5%;
         width: 90%;
+        height: 300px;
+        object-fit: none;
+        object-position: top;
     }
-    
+
+    #ContentBox:hover{
+        cursor:pointer;
+        opacity: 80%;
+        transform: translateY(-10px) scale(1.025);
+    }
+
     #ProfilePicture{
         position: relative;
         width: 12%;
@@ -367,5 +380,11 @@
         align-content: center;
         height: auto;
         border-radius: 100px;
+        transition: transform 250ms linear;
+    }
+
+    #ProfilePicture:hover{
+        cursor:pointer;
+        transform: translateY(-10px) scale(1.025);
     }
 }

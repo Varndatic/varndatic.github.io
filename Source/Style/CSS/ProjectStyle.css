@@ -1,0 +1,62 @@
+
+#ProjectBody{
+    margin-right: 5%;
+    margin-left: 10%;
+    position: relative;
+    width: 80%;
+    display: inline-block;
+}
+
+
+#CenterSprite{
+    position: relative;
+    align-content: center;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    border-radius: 2%;
+    transition: transform 250ms linear, opacity 250ms linear;
+}
+
+#RightSprite{
+    position: relative;
+    width: 60%;
+    object-fit: contain;
+    align-content: right;
+    transition: transform 250ms linear, opacity 250ms linear;
+}
+
+#LeftSprite{
+    position: relative;
+    width: 60%;
+    object-fit: contain;
+    align-content: left;
+    transition: transform 250ms linear, opacity 250ms linear;
+}
+
+#CenterSprite:hover{
+    cursor:pointer;
+    transform: scale(1.1);
+}
+
+#RightSprite:hover{
+    cursor:pointer;
+    transform: scale(1.1);
+}
+
+#LeftSprite:hover{
+    cursor:pointer;
+    transform: scale(1.1);
+}
+
+
+@media screen and (max-width: 480px) and (orientation: Portrait ) {
+
+}
+
+@media screen and (min-width: 481px) and (orientation: Landscape) {
+}
+
+@media screen and (min-width: 1025px) and (orientation: Landscape){
+
+}
