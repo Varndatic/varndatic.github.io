@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html>
     <head>
+    <script src="jquery.js"></script>
+    <script> 
+    $(function () {
+  var includes = $('[data-include]')
+  $.each(includes, function () {
+    var file = $(this).data('include') + '.html'
+    $(this).load(file)
+  })
+})
+    </script> 
         <meta charset="UTF-8">
 <link rel="stylesheet" href="Source/Style/CSS/MainStyle.css">
 <script src="Source/Scripts/MainScript.js"></script>
@@ -36,5 +46,8 @@
             </div>
         </div>
     </div>
+     <div data-include="b"></div>
+  </body> 
+</html>
 </body>
 </html>
